@@ -6,7 +6,7 @@ using UnityEngine.VFX;
 public class PositionManager : MonoBehaviour
 {
     [SerializeField] Transform[] spawners;
-    [SerializeField] GameObject airCraft;
+    [SerializeField] GameObject Cloud;
     void Start()
     {
         InvokeRepeating("ResetPosition", 2.0f,  2.0f);
@@ -15,6 +15,7 @@ public class PositionManager : MonoBehaviour
     {
         int random = Random.Range(0, spawners.Length);
 
-        airCraft.transform.position = spawners[random].position;
+        
+        Cloud.transform.position = spawners[random].position;
     }
 }

@@ -501,7 +501,7 @@ MonoBehaviour:
   - {fileID: 2024044879}
   - {fileID: 1318052783}
   - {fileID: 332631796}
-  airCraft: {fileID: 902367717}
+  Cloud: {fileID: 902367717}
 --- !u!4 &1709920492
 Transform:
   m_ObjectHideFlags: 0

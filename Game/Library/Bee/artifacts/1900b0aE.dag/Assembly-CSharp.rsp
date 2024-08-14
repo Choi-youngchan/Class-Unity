@@ -360,6 +360,8 @@
 "Assets/Class4th(Translate)/Scripts/Aircraft.cs"
 "Assets/Class4th(Translate)/Scripts/Cloud.cs"
 "Assets/Class4th(Translate)/Scripts/Position Manager.cs"
+"Assets/Class5th(Animation)/Scripts/Postbox.cs"
+"Assets/Class5th(Animation)/Scripts/Ybot.cs"
 -langversion:9.0
 
 /deterministic

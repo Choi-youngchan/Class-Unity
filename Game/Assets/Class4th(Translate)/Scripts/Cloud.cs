@@ -5,12 +5,7 @@ using UnityEngine;
 public class Cloud : MonoBehaviour
 {
     Vector3 direction;
-    [SerializeField ]float speed = 2;
-    // public void ResetPosition()
-    // {
-    //     // int random = Random.Range(0, PositionManager.spawners.Length);
-    //     // direction = spawners[random].position;
-    // }
+    [SerializeField ]float speed = 10.0f;
 
     void Start()
     {
@@ -19,9 +14,9 @@ public class Cloud : MonoBehaviour
 
     void Update()
     {
-        direction.z = direction.z - speed * Time.deltaTime;
-        transform.position += direction * Time.deltaTime;
+        // direction.z = direction.z - speed * Time.deltaTime;
+        // transform.position += direction * Time.deltaTime;
 
-        // transform.Translate();
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }
