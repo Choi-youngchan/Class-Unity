@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class DataManager : MonoBehaviour
 {
     [SerializeField] int score;
-    [SerializeField] string scoreText;
+    [SerializeField] ScoreUI scoreUI;
 
     void Awake()
     {
@@ -28,12 +28,15 @@ public class DataManager : MonoBehaviour
     {
         score = 0;
         Save();
+        // PlayerPrefs.DeleteAll();
+        // Load();
     }
     public void IncreaseScore()
     {
         int random = UnityEngine.Random.Range(5, 11);
         score += random;
+
+        scoreUI.OnUpdate(random);
         PlayerPrefs.SetInt("Score", score);
-        scoreText = random.ToString();
     }
 }
